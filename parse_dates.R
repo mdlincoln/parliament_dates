@@ -18,3 +18,5 @@ parliament <- parliament_raw %>%
     # Pull out day of the year
     start_yday = yday(start_date),
     end_yday = yday(end_date))
+
+write.csv(parliament, file = "parliament_dates.csv", row.names = FALSE)
